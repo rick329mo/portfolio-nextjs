@@ -2,8 +2,7 @@ import React, {useState} from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu} from 'react-icons/ai'
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
-import { BsFillPersonLinesFill } from 'react-icons/bs'
+import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
@@ -12,7 +11,7 @@ const Navbar = () => {
     return (
     <div className='fixed w-full h-20 shadow-xl z-[100]'>
         <div className= 'flex justify-between items-center w-full h-full p-5 2xl:px-16'>
-            <Image src="/../public/assets/RM.png" alt="/" width='125' height='50'/>
+            <Image src="/../public/assets/RM.png" alt="/" width='110' height='40' className='cursor-pointer'/>
             <div>
                 <ul className='hidden md:flex'>
                     <Link href="/"><li className='ml-10 text-sm uppercase hover:underline'>Home</li></Link>
@@ -21,13 +20,13 @@ const Navbar = () => {
                     <Link href="/"><li className='ml-10 text-sm uppercase hover:underline'>Projects</li></Link>
                     <Link href="/"><li className='ml-10 text-sm uppercase hover:underline'>Contact</li></Link>
                 </ul>
-                <div onClick={handleNav} className='md:hidden cursor-pointer hover:scale-105 ease-in duration-300'>
-                    <AiOutlineMenu size={25}/>
+                <div onClick={handleNav} className='md:hidden cursor-pointer'>
+                    <AiOutlineMenu size={22}/>
                 </div>
             </div>
         </div>
         <div className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/60' : ''}>
-            <div className={nav ? 'fixed left-0 top-0 px-10 h-screen w-[75%] sm:w-[60%] md:w-[45%] bg-[#ecf0f3] ease-in duration-500' : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'}>
+            <div className={nav ? 'fixed left-0 top-0 px-10 h-screen w-[80%] sm:w-[70%] md:w-[50%] bg-[#ecf0f3] ease-in duration-500' : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'}>
                 <div>
                     <div className='flex w-full items-center justify-between'>
                         <Image src='/../public/assets/RM.png' alt='/' width='100' height='25'/>
@@ -57,7 +56,7 @@ const Navbar = () => {
                             </Link>
                         </ul>
                         <div className='pt-40'>
-                            <p className='uppercase tracking-widest text-red-500 mb-5'>Let's Connect</p>
+                            <p className='uppercase tracking-widest text-red-500 mb-8'>Let's Connect</p>
                             <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                                 <div className='rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-110 ease-in duration-300'>
                                     <FaLinkedinIn />
@@ -66,10 +65,10 @@ const Navbar = () => {
                                     <FaGithub />
                                 </div>
                                 <div className='rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-110 ease-in duration-300'>
-                                    <AiOutlineMail />
+                                    < FaTwitter />
                                 </div>
                                 <div className='rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-110 ease-in duration-300'>
-                                    <BsFillPersonLinesFill />
+                                    <AiOutlineMail />
                                 </div>
                             </div>
                         </div>
