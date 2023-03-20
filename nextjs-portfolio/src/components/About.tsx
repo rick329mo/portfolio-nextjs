@@ -14,7 +14,7 @@ const About = () => {
                     I have always had a knack for technology and working with computers, but never expected to develop a love for them.
                     In January of 2022 I stumbled upon a YouTube video about coding and on a whim, decided to listen in.
                 </p>
-                <p className='py-2 text-gray-600'>My intruige turned into a several month binge on all things HTML, CSS, and JavaScript. It wasn't until my brother-in-law
+                <p className='py-2 text-gray-600'>My intrigue turned into a several month binge on all things HTML, CSS, and JavaScript. It wasn't until my brother-in-law
                      (also in the industry) recommended that I try a bootcamp that I decided to turn this passion into a career. After several months 
                      of learning advaced JavaScript and React through Scrimba's Front-End Developer Career-Path, I finally earned my certificate.
                 </p>
