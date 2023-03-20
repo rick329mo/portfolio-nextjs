@@ -9,7 +9,7 @@ const Navbar = () => {
     const handleNav = () => setNav(prevNav => !prevNav)
 
     return (
-    <div className='fixed w-full h-20 shadow-xl z-[100]'>
+    <div className='fixed w-full h-20 shadow-xl bg-[#ecf0f3] z-[100]'>
         <div className= 'flex justify-between items-center w-full h-full p-5 2xl:px-16'>
             <Image src="/../public/assets/RM.png" alt="/" width='110' height='40' className='cursor-pointer'/>
             <div>
@@ -35,7 +35,7 @@ const Navbar = () => {
                         </div>
                     </div>
                     <div className='border-b border-gray-300 my-4'>
-                        <p className='py-2 w-[90%] md:w-[95%]'>Let's build something <span className='text-red-500'>legendary</span> together</p>
+                        <p className='py-2 w-[90%] md:w-[95%]'>Let's build something <span className='text-red-500 italic'>legendary</span> together</p>
                     </div>
                     <div className='py-4 flex flex-col'>
                         <ul className='uppercase'>
